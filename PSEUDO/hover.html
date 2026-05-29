@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px;
+        }
+        .card {
+            width: 80px;
+            height: 160px;
+            border: 2px solid black;
+            background-color: purple;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: ease-in-out 3s;
+           
+
+        }
+
+    
+        .card:nth-child(odd):hover {
+    
+            background-image: url(./img-purple.jpg);
+            transform: rotate(360deg)  scale(1.20);
+        
+           
+        }
+        .card:nth-child(even) {
+            background-color: yellow;
+             transition: ease-in-out 1s;
+             
+
+        }
+        
+ .card:nth-child(even):hover {
+            background-image: url(./img-yellow.jpg);
+           
+             transform: rotate(360deg) scale(1.20);
+
+ }
+
+.card:nth-child(odd):active {
+      background-image:url(./gif-dragon.gif);
+     
+}
+.card:nth-child(even):active {
+      background-image:url(./gif-po.gif);
+      
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+
+    <button>Enviar
+    <img src="./seta-direita.png" alt=""></button>
+
+</body>
+</html>
